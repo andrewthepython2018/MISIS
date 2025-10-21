@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.set_page_config(page_title="NL → Plot (RU)", page_icon="📊", layout="wide")
+st.set_page_config(page_title="NL → Plot", page_icon="📊", layout="wide")
 
 # ===================== Utilities =====================
 
