@@ -96,6 +96,10 @@ def parse_prompt_ru(text: str) -> dict:
     if m_where:
         filt = m_where.group(1).strip()
 
+    m_auto = re.search(r"распределени[ея]\s+([a-zа-я0-9_]+)", t, flags=re.IGNORECASE)
+    if m_auto and not (col or x or y):
+        col = m_auto.group(1).strip()
+
     return {
         "plot": plot_type,
         "x": x,
